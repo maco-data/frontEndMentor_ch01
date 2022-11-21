@@ -32,16 +32,18 @@ body {
 	border-radius: 10px;
 	display: block;
 	position: relative;
-	width: auto;
-	/* height: 100vh; */
+	width: 80;
 }
 
 #product_image {
-	max-width: fit-content;
+	display: grid;
+	align-items: center;
+	object-fit: contain;
 }
 
 #product_info {
 	margin: 10px;
+	padding: 1em;
 }
 
 .text {
@@ -50,11 +52,11 @@ body {
 }
 
 #title {
-	font-family: "Fraunces", soft-serif;
+	font-family: "Fraunces";
 }
 
 #product_category {
-	color: var(--dark_cyan);
+	color: var(--dark_grayish_blue);
 	letter-spacing: 3px;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -64,6 +66,7 @@ body {
 	display: flex;
 	align-items: center;
 	gap: 1em;
+	margin-bottom: 1em;
 }
 .new_price {
 	color: var(--dark_cyan);
@@ -76,18 +79,24 @@ body {
 }
 
 #add_button {
+	align-items: center;
+	display: flex;
 	background-color: var(--dark_cyan);
 	border: none;
 	border-radius: 5px;
-	font-family: "Montserrat";
-	padding: 10px 50px;
 	color: var(--white);
-	gap: 4px;
+	font-family: "Montserrat";
+	gap: 1em;
+	justify-content: center;
+	margin-bottom: 1em;
+	padding: 1em;
+	width: 100%;
 }
 
 /* Frontend Mentor */
 
 .attribution {
+	margin-top: 2em;
 	font-size: 11px;
 	text-align: center;
 }
