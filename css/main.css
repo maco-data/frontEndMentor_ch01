@@ -32,13 +32,17 @@ body {
 	border-radius: 10px;
 	display: block;
 	position: relative;
-	width: 80;
+	margin-top: 2em;
+	width: 60;
 }
 
 #product_image {
-	display: grid;
+	position: relative;
+	width: 100%;
+	height: 50%;
 	align-items: center;
-	object-fit: contain;
+	object-fit: cover;
+	border-radius: 10px 10px 0 0;
 }
 
 #product_info {
