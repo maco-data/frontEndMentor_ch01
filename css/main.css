@@ -1,3 +1,8 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap");
+
+/* Colors */
 :root {
 	/* Primary Colors */
 	--dark_cyan: hsl(158, 36%, 37%);
@@ -9,13 +14,75 @@
 	--white: hsl(0, 0%, 100%);
 }
 
-/* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
-
 body {
-	font-size: 14px;
+	background-color: var(--cream);
+	font-size: 1em;
 	max-width: 1440px;
+}
+
+@media only screen and (max-width: 375px) {
+	body {
+		font-size: 1em;
+		max-width: 375;
+	}
+}
+
+#container {
+	background-color: var(--white);
+	border-radius: 10px;
+	display: block;
+	position: relative;
+	width: auto;
+	/* height: 100vh; */
+}
+
+#product_image {
+	max-width: fit-content;
+}
+
+#product_info {
+	margin: 10px;
+}
+
+.text {
+	font-family: "Montserrat";
+	color: var(--dark_grayish_blue);
+}
+
+#title {
+	font-family: "Fraunces", soft-serif;
+}
+
+#product_category {
+	color: var(--dark_cyan);
+	letter-spacing: 3px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#price {
+	display: flex;
+	align-items: center;
+	gap: 1em;
+}
+.new_price {
+	color: var(--dark_cyan);
+	font-family: "Fraunces";
+	font-size: 3em;
+}
+
+#product_name {
+	font-family: "Fraunces";
+}
+
+#add_button {
+	background-color: var(--dark_cyan);
+	border: none;
+	border-radius: 5px;
+	font-family: "Montserrat";
+	padding: 10px 50px;
+	color: var(--white);
+	gap: 4px;
 }
 
 /* Frontend Mentor */
