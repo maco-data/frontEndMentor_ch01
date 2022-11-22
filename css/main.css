@@ -47,6 +47,12 @@ h1 {
 	overflow: hidden;
 }
 
+@media (min-width: 600px) {
+	#container {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
 #product_image {
 	position: relative;
 	width: 100%;
