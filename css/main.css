@@ -6,6 +6,7 @@
 :root {
 	/* Primary Colors */
 	--dark_cyan: hsl(158, 36%, 37%);
+	--very_dark_cyan: hsl(158, 36%, 27%);
 	--cream: hsl(30, 38%, 92%);
 
 	/* Neutral Colors */
@@ -16,38 +17,45 @@
 
 body {
 	background-color: var(--cream);
-	font-size: 1em;
+	font-size: 2rem;
 	max-width: 1440px;
+	display: grid;
+	place-content: center;
 }
 
 @media only screen and (max-width: 375px) {
 	body {
 		font-size: 1em;
-		max-width: 375;
+		display: flex;
+		flex-direction: column;
+		/* margin: 2rem 1rem 1rem; */
 	}
+}
+
+p,
+h1 {
+	overflow-wrap: break-word;
 }
 
 #container {
 	background-color: var(--white);
-	border-radius: 10px;
-	display: block;
+	border-radius: 0.5rem;
+	display: grid;
 	position: relative;
-	margin-top: 2em;
-	width: 60;
+	margin: 2rem 1rem 1rem;
+	@media min-width: 375px;
+	overflow: hidden;
 }
 
 #product_image {
 	position: relative;
 	width: 100%;
-	height: 50%;
 	align-items: center;
 	object-fit: cover;
-	border-radius: 10px 10px 0 0;
 }
 
 #product_info {
-	margin: 10px;
-	padding: 1em;
+	padding: 1rem;
 }
 
 .text {
@@ -57,25 +65,27 @@ body {
 
 #title {
 	font-family: "Fraunces";
+	line-height: 1;
+	color: var(--very_dark_blue);
 }
 
 #product_category {
 	color: var(--dark_grayish_blue);
-	letter-spacing: 3px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	letter-spacing: 0.5rem;
 }
 
 #price {
 	display: flex;
 	align-items: center;
-	gap: 1em;
-	margin-bottom: 1em;
+	gap: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 .new_price {
 	color: var(--dark_cyan);
 	font-family: "Fraunces";
-	font-size: 3em;
+	font-size: 2rem;
+	margin: 0;
 }
 
 #product_name {
@@ -87,20 +97,24 @@ body {
 	display: flex;
 	background-color: var(--dark_cyan);
 	border: none;
-	border-radius: 5px;
+	border-radius: 0.5rem;
 	color: var(--white);
 	font-family: "Montserrat";
 	gap: 1em;
 	justify-content: center;
-	margin-bottom: 1em;
-	padding: 1em;
+	margin-bottom: 1rem;
+	padding: 1rem;
 	width: 100%;
+}
+
+#add_button:is(:hover, :focus) {
+	background-color: var(--very_dark_cyan);
 }
 
 /* Frontend Mentor */
 
 .attribution {
-	margin-top: 2em;
+	margin-top: 1rem;
 	font-size: 11px;
 	text-align: center;
 }
