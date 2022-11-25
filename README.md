@@ -28,12 +28,10 @@ Users should be able to:
 ### Screenshot
 
 -   Mobile Version Solution
-
-![Mobile Solution](solutions/mobile_solution.png)
+<img src="solutions/mobile_solution.png" alt="drawing" width="275"/>
 
 -   Desktop Version Solution
-
-![Mobile Solution](solutions/desktop_solution.png)
+<img src="solutions/desktop_solution.png" alt="drawing" width="512"/>
 
 ### Links
 
