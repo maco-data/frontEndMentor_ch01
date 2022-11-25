@@ -31,19 +31,17 @@ svg {
 
 body {
 	background-color: var(--cream);
+	display: grid;
 	font-size: 2rem;
 	height: 100%;
-	max-width: 1440px;
-	display: grid;
 	place-content: center;
 }
 
 @media only screen and (max-width: 375px) {
 	body {
-		font-size: 1em;
 		display: flex;
 		flex-direction: column;
-		/* margin: 2rem 1rem 1rem; */
+		font-size: 1em;
 	}
 }
 
@@ -53,16 +51,17 @@ h1 {
 }
 
 #container {
-	box-sizing: content-box;
+	align-items: center;
 	background-color: var(--white);
+	box-sizing: content-box;
 	border-radius: 0.5rem;
 	display: grid;
+	justify-items: center;
 	position: relative;
 	margin: 2rem 1rem 1rem;
+	max-width: 1200px;
 	@media min-width: 375px;
 	overflow: hidden;
-	justify-items: center;
-	align-items: center;
 }
 
 @media (min-width: 600px) {
@@ -72,27 +71,28 @@ h1 {
 }
 
 #product_image {
-	position: relative;
-	width: 100%;
 	align-items: center;
+	max-width: 600px;
 	object-fit: fit;
 	overflow: hidden;
-	max-width: 600px;
+	position: relative;
+	width: 100%;
 }
 
 #product_info {
+	max-width: 600px;
 	padding: 1rem;
 }
 
 .text {
-	font-family: "Montserrat";
 	color: var(--dark_grayish_blue);
+	font-family: "Montserrat";
 }
 
 #title {
+	color: var(--very_dark_blue);
 	font-family: "Fraunces";
 	line-height: 1;
-	color: var(--very_dark_blue);
 }
 
 #product_category {
@@ -101,11 +101,11 @@ h1 {
 }
 
 #price {
-	display: flex;
 	align-items: center;
+	display: flex;
 	gap: 1rem;
-	margin-top: 1rem;
 	margin-bottom: 1rem;
+	margin-top: 1rem;
 }
 .new_price {
 	color: var(--dark_cyan);
@@ -120,11 +120,11 @@ h1 {
 
 #add_button {
 	align-items: center;
-	display: flex;
 	background-color: var(--dark_cyan);
 	border: none;
 	border-radius: 0.5rem;
 	color: var(--white);
+	display: flex;
 	font-family: "Montserrat";
 	gap: 1em;
 	justify-content: center;
