@@ -15,9 +15,24 @@
 	--white: hsl(0, 0%, 100%);
 }
 
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
 body {
 	background-color: var(--cream);
 	font-size: 2rem;
+	height: 100%;
 	max-width: 1440px;
 	display: grid;
 	place-content: center;
@@ -38,6 +53,7 @@ h1 {
 }
 
 #container {
+	box-sizing: content-box;
 	background-color: var(--white);
 	border-radius: 0.5rem;
 	display: grid;
@@ -45,6 +61,8 @@ h1 {
 	margin: 2rem 1rem 1rem;
 	@media min-width: 375px;
 	overflow: hidden;
+	justify-items: center;
+	align-items: center;
 }
 
 @media (min-width: 600px) {
@@ -57,7 +75,9 @@ h1 {
 	position: relative;
 	width: 100%;
 	align-items: center;
-	object-fit: cover;
+	object-fit: fit;
+	overflow: hidden;
+	max-width: 600px;
 }
 
 #product_info {
